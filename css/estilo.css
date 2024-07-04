@@ -1,0 +1,143 @@
+  .coelho {
+    position: fixed;
+    left: -200px;
+    animation: falling 0.001s linear infinite;
+    transition: left 0.001s linear;
+  }
+
+  @keyframes falling {
+    from {
+      top: -300px;
+    }
+
+    to {
+      top: 600px;
+    }
+  }
+
+  .coelho:nth-child(1) {
+    transform: scale(0.1);
+    animation: falling 1.40s linear infinite;
+    left: 10%;
+  }
+
+  .coelho:nth-child(2) {
+    transform: scale(0.1);
+    animation: falling 1.55s linear infinite;
+    left: 45%;
+  }
+
+  .coelho:nth-child(3) {
+    transform: scale(0.1);
+    animation: falling 1.5s linear infinite;
+    left: 75%;
+  }
+
+  .coelho:nth-child(4) {
+    transform: scale(0.1);
+    animation: falling 1.65s linear infinite;
+    left: 25%;
+  }
+
+  .coelho:nth-child(5) {
+    transform: scale(0.1);
+    animation: falling 1.75s linear infinite;
+    left: -5%;
+  }
+
+  .coelho:nth-child(6) {
+    transform: scale(0.1);
+    animation: falling 2s linear infinite;
+    left: -15%;
+  }
+
+  .coelho:nth-child(7) {
+    transform: scale(0.1);
+    animation: falling 2s linear infinite;
+    left: 35%;
+  }
+
+  .coelho:nth-child(8) {
+    transform: scale(0.1);
+    animation: falling 3s linear infinite;
+    left: 65%;
+  }
+
+  .coelho:nth-child(9) {
+    transform: scale(0.1);
+    animation: falling 2.21s linear infinite;
+    left: 55%;
+  }
+
+  .coelho:nth-child(10) {
+    transform: scale(0.1);
+    animation: falling 2.5s linear infinite;
+    left: 80%;
+  }
+
+  body {
+    background-color: lightblue;
+    font-family: sans-serif;
+  }
+
+  .botao {
+    background-color: #bd91e4;
+    border: 1px solid #CCCCCC;
+    color: white;
+    border-radius: 6px;
+    padding: 4px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: auto;
+    top: 53%;
+    left: 50%;
+  }
+
+  .botao:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .pergunta {
+    background-color: #bd91e4;
+    border: 1px solid #CCCCCC;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 25%;
+    left: 45%;
+  }
+
+  .caixa{
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    font-size: larger;
+  }
+
+  .escreve {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    font-size: larger;
+    color: white;
+    background-color: #bd91e4;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #resultado {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0.1);
+    font-size: larger;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+  }
