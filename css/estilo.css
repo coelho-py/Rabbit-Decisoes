@@ -134,26 +134,33 @@
   }
 
   #resultado {
+    width: 170px;
+    margin-left: 380px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0.1);
     font-size: larger;
   }
 
-  @media screen and (max-width: 480px) {
-    .main {
-      display: contents;
+  @media screen and (max-width: 720px) {
+    .corpo{
+      margin-left: 60px;
+      margin-top: 520px;
+      width: 90%;
+      height: 100%;
     }
-
-    .botao {
-      position: absolute;
-      right: 3em;
-      top: 12em;
+    .caixa{
+      width: 100%;
+    }
+    .pergunta{
+      width: 22%;
+    }
+    .escreve{
       width: 12%;
     }
-
-    #resultado {
-      position: absolute;
-      top: 10em;
+    .botao{
+      margin-top: 5px;
+      margin-right: 1spx;
+      width: 10%;
     }
   }
 
