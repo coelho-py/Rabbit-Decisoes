@@ -1,3 +1,7 @@
+  :root {
+    --roxo_principal: #bd91e4;
+  }
+
   .coelho {
     position: fixed;
     left: -200px;
@@ -11,7 +15,7 @@
     }
 
     to {
-      top: 600px;
+      top: 1100px;
     }
   }
 
@@ -80,17 +84,52 @@
     font-family: sans-serif;
   }
 
+  .main {
+    display: grid;
+    text-align: start;
+    grid-template-columns: 50%;
+    padding: 5em;
+    margin-top: 20em;
+    margin-left: 40em;
+  }
+
+  .pergunta {
+    background-color: var(--roxo_principal);
+    border: 1px solid #CCCCCC;
+    color: white;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    font-size: large;
+  }
+
+  .escreve {
+    color: white;
+    background-color: var(--roxo_principal);
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    width: 15%;
+    font-size: large;
+  }
+
+  .caixa {
+    width: 100%;
+    font-size: larger;
+  }
+
+
   .botao {
-    background-color: #bd91e4;
+    background-color: var(--roxo_principal);
     border: 1px solid #CCCCCC;
     color: white;
     border-radius: 6px;
     padding: 4px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: auto;
-    top: 53%;
-    left: 50%;
+    width: 9%;
+    margin-left: 90%;
   }
 
   .botao:hover {
@@ -99,45 +138,44 @@
     cursor: pointer;
   }
 
-  .pergunta {
-    background-color: #bd91e4;
-    border: 1px solid #CCCCCC;
-    color: white;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 25%;
-    left: 45%;
-  }
-
-  .caixa{
-    position: fixed;
-    top: 50%;
-    left: 45%;
-    font-size: larger;
-  }
-
-  .escreve {
-    position: fixed;
-    top: 40%;
-    left: 45%;
-    font-size: larger;
-    color: white;
-    background-color: #bd91e4;
-    border: 1px solid #CCCCCC;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  }
-
   #resultado {
-    width: auto;
-    height: auto;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0.1);
     font-size: larger;
-    position: fixed;
-    top: 55%;
-    left: 50%;
+  }
+
+  @media screen and (max-width: 480px) {
+    .main {
+      display: contents;
+    }
+
+    .botao {
+      position: absolute;
+      right: 3em;
+      top: 12em;
+      width: 12%;
+    }
+
+    #resultado {
+      position: absolute;
+      top: 10em;
+    }
+  }
+
+  @media screen and (min-width: 2500px) {
+    .main {
+      width: 30%;
+      padding: 5em;
+      margin: 25em;
+      margin-left: 60em;
+    }
+
+    .pergunta {
+      width: 30%;
+    }
+
+    .botao {
+      width: 11%;
+      margin-left: 88%;
+    }
   }
